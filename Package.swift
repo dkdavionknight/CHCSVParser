@@ -4,17 +4,6 @@ import PackageDescription
 
 let package = Package(
     name: "CHCSVParser",
-    products: [
-        .library(
-            name: "CHCSVParser",
-            targets: ["CHCSVParser"])
-    ],
-    targets: [
-        .target(
-            name: "CHCSVParser",
-            dependencies: [],
-            path: "CHCSVParser",
-            sources: ["CHCSVParser"],
-            publicHeadersPath: "include")
-    ]
+    products: [.library(name: "CHCSVParser", targets: ["CHCSVParser"])],
+    targets: [.target(name: "CHCSVParser")]
 )
